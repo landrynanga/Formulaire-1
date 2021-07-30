@@ -1,0 +1,167 @@
+body {
+    width: 1280px;
+    margin: 0 auto 0 auto;
+}
+header {
+    margin-top: 1%;
+}
+
+header, nav, section{
+    border: solid 1px;
+    border-radius : 5px;
+    overflow: auto;
+}
+nav, section {
+ float: left;
+}
+
+
+/* HEADER *******************/
+
+img#logoUqtr {
+    padding : 1%;
+    float: left;
+}
+
+h1#titre {
+    font-family: 'Yatra One', sans-serif;
+    float: right;
+    padding: 3.5%;
+    font-size: 150%;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+/* END HEADER **********************/
+
+
+/* NAV ***************************/
+
+a.menu11:hover, a.menu22:hover, a.menu33:hover {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+li.menu11:hover, li.menu22:hover, li.menu33:hover {
+    background-color: black;
+}
+.backgroundColorClick {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: black;
+
+}
+nav {
+    width: 15%;
+    margin-top: 1%;
+}
+
+ul#ulmenu {
+    padding: 0;
+    margin: 0;
+    list-style: inside none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li.menu{
+    text-align: center;
+    padding: 2%;
+}
+
+li.menu1 {
+    border-bottom: solid 1px;
+}
+/* END NAV**************************/
+
+
+/*section #textTableau ********************/
+
+section#textTableau, section#formulaire, div#map {
+    padding: 0;
+    margin: 1% 0 1% 1%;
+    width: 83.5%;
+}
+
+h1.marginText {
+    margin-top: 2%;
+}
+.marginText, table, button#effacerTableau, button#remplirTableau {
+    margin-left: 1%;
+    margin-bottom: 2%;
+}
+
+ul#ulsection li {
+    margin-left: 0.8%;
+}
+
+p.marginText, ul#ulsection {
+    font-size: 90%;
+}
+
+
+/*Table***********************/
+table {
+    width: 98%;
+    font-size: 110%;
+    margin-bottom: 1%;
+}
+table, td, th{
+    border : solid 1px black;
+    border-collapse: collapse;
+}
+
+thead th  {
+    background-color: #D5D8DC ;
+    color: white;
+}
+tr td:last-child {
+    text-align: center;
+}
+
+tr td:nth-child(2), tr td:nth-child(3) {
+    padding-left: 5px;
+}
+
+tr#row0 th:nth-child(2):hover, tr#row0 th:nth-child(3):hover, tr#row0 th:nth-child(4):hover {
+    cursor: pointer;
+}
+/* map */
+
+
+div#map {
+    padding-left: 10px;
+    height: 400px;
+    width: 83.5%;
+}
+
+
+#formDiv {
+    margin-left: 10px;
+    width: 30%;
+}
+#formulaire input[type='text'] {
+    width: 100%;
+    clear: both;
+
+}
+div.formClass {
+    margin: 10px;
+}
+
+span.error{
+    color: red;
+}
+
+span.valide {
+    color: blue;
+}
+/* end map*/
+/* END TABLE *****************/
+/* END section #textTableau */

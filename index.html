@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content=" GROUPE 1 : Landry NANGA MOLA, Alexandre ANDZE KANDE, Mathias Bassala Diouf">
+    <title>Loisir pour les étudiants</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.google.com/specimen/Yatra+One?selection.family=Yatra+One">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<script src="js/jquery/jquery-3.1.1.min.js"></script>
+<script src="js/index.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLgg7FYbqjFNgHMoAQ95OKUC5Y3e9aEzg&callback=initMap">
+</script>
+<script src="js/index.js"></script>
+<body>
+<!-- header -->
+<header> <img src="img/logoUqtr.jpg" alt="logo UQTR" id="logoUqtr">
+    <h1 id="titre">Loisir pour les étudiants !</h1> </header>
+<!-- end header -->
+<!-- nav -->
+<nav>
+    <ul id="ulmenu">
+        <a href="#"  class="menu11"><li id="li1" class="menu menu1 menu11"> Accueil</li></a>
+        <a href="#" class="menu22"><li id="li2" class="menu menu1 menu22"> S'inscrire</li></a>
+        <a href="#" class="menu33"><li id="li3" class="menu menu33" id="localiser">Localiser une activité</li></a>
+    </ul>
+</nav>
+<!-- end nav -->
+
+<!-- section #textTableau -->
+<section id="textTableau">
+    <h1 class="marginText">Notre but</h1>
+    <p class="marginText">Notre site propose aux étudiants désireux de réaliser une ou plusieurs activités de loisir de rejoindre les différents activités proposées dans laliste suivante en 3 étapes : </p>
+    <ul id="ulsection">
+        <li>S'inscrire</li>
+        <li>Choisir une ou plusieurs activité</li>
+        <li>Commencer les activités en groupe</li>
+    </ul>
+    <p class="marginText">Les differentes activités des groupes sont sous la responsabilité de professionnelles. Il s'agit de passionnés du domaines qui vous feront découvrir des pans inédits de vos loisirs preférés. Qu'attendez-vous...? Rejoignez-nous ! </p>
+    <h1 class="marginText">Liste des activités disponibles</h1>
+    <table>
+        <thead>
+        <tr id="row0">
+            <th>#</th>
+            <th>Activité</th>
+            <th>Responsable</th>
+            <th>Nombre d'inscrits</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <button id="effacerTableau">Effacer le tableau</button>
+    <button id="remplirTableau">Remplir le tableau</button>
+</section>
+<!-- end section #textTableau -->
+
+<!-- section #formulaire -->
+<section id="formulaire">
+    <div id="formDiv">
+        <form  method="post">
+
+            <div class="formClass" >
+                <label>Prénom :
+                    <input type="text" name="firstname"  size="20" placeholder ="Votre nom ici"/>
+                    <span class="error"></span>
+                </label>
+            </div>
+
+            <div class="formClass">
+                <label for="lname">Nom :
+                    <input type="text" name="lastname" id ="lname" size="20" />
+                    <span class="error"></span>
+                </label>
+            </div>
+
+            <div class="formClass">
+                <label>Université :
+                    <input type="text" name="academy"  size="20" value ="UQTR"/>
+                    <span class="error"></span>
+                </label>
+            </div>
+
+            <div class="formClass">
+                <label>Département :
+                    <input type="text" name="department" size="75" >
+                    <span class="error"></span>
+                </label>
+            </div>
+
+            <div class="formClass">
+                <label>Sexe :<br>
+                    Masculin : <input type="radio" name="sex" value="Masculin"/>
+                    Féminin : <input type="radio" name="sex"  value="Feminin"/>
+                    Autre : <input type="radio" name="sex" value="Autre" checked="checked"/>
+                </label>
+            </div>
+
+            <div class="formClass">
+                <label>Commentaires :
+                    <textarea >
+                        </textarea>
+                    <span class="error"></span>
+                </label>
+            </div>
+
+
+            <div class="formClass">
+                <label>Age :
+                    <select name="age">
+                        <option value="moins de 18 ans">- de 18 ans</option>
+                        <option value="entre 18 et 40 ans">18 à 40 ans</option>
+                        <option value="entre 41 et 60 ans">+ d 40 ans</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="formClass">
+                <input type="submit" value="Soumettre" size="20" />
+
+            </div>
+            <span class="valide"></span>
+        </form>
+    </div>
+</section>
+<!-- end section #formulaire -->
+<div id="map"></div>
+</body>
+
+</html>
